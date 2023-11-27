@@ -1,0 +1,113 @@
+.fir
+{
+    padding-top: 1%;
+    /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+    border: 1%;
+    text-align: end;
+    background-color: #1d213a;
+}
+.fir p{
+color: white;
+}
+.Start
+{
+    font-family: "Bradley Hand", cursive;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+    background-color: #1d213a;
+    text-align: center;
+}
+.Start p{
+    background-color: #1d213a;
+}
+.tab
+{
+    height: 400px;
+   margin-left: 5%;
+   margin-right: 5%;
+    margin-top: 7%;
+    display: flex; 
+    justify-content: space-around;
+    
+}
+.small
+{
+    font-size: 25px;
+    border: 1px solid white;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 1%;
+    height: 70%;
+    /* background-image: linear-gradient(rgb(69, 69, 182),rgb(156, 75, 156)); */
+    width: 17%;
+    text-align: center;
+}
+.medium
+{
+    font-size: 25px;
+    border: 1px solid white;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 1%;
+    height: 70%;
+    width: 17%;
+    text-align: center;
+    /* background-image: linear-gradient(rgb(69, 69, 182),rgb(156, 75, 156)); */
+}
+.mini:hover{
+    background-color: rgb(204, 202, 202);
+    padding: 2%;
+}
+.small:hover{
+    background-color: rgb(204, 202, 202);
+    padding: 2%;
+}
+.medium:hover{
+    background-color: rgb(204, 202, 202);
+    padding: 2%;
+}
+.large:hover{
+    background-color: rgb(204, 202, 202);
+    padding: 2%;
+}
+/* .large
+{
+    height: 70%;
+    width: 17%;
+    text-align: center;
+     background-image: linear-gradient(rgb(69, 69, 182),rgb(156, 75, 156)); 
+} */
+.mini
+{
+   font-size: 25px;
+    border: 1px solid while;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 1%;
+    height: 70%;
+    width: 17%;
+    text-align: center;
+    /* background-image: linear-gradient(rgb(69, 69, 182),rgb(156, 75, 156)); */
+}
+.mini h3{
+    padding-top: 15%;
+}
+.small h3{
+    padding-top: 15%;
+}
+.medium h3{
+    padding-top: 15%;
+}
+.large h3{
+    padding-top: 15%;
+}
+.large
+{
+    font-size: 25px;
+    border: 1px solid white;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 1%;
+    height: 70%;
+    width: 17%;
+    text-align: center;
+    /* background-image: linear-gradient(rgb(69, 69, 182),rgb(156, 75, 156)); */
+}

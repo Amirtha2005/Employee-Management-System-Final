@@ -3,13 +3,15 @@ import './Sidebar.css'
 import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
 import CloseIcon from '@mui/icons-material/Close';
 import {useNavigate} from 'react-router-dom';
+import PeopleIcon from '@mui/icons-material/People';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function Sidebar() {
   const Navigate= useNavigate();
   const Navi=useNavigate();
   const handleClick=(event)=>
   {
     event.preventDefault();
-     Navigate("/EmployeeForm");
+     Navigate("/toEmployeeForm");
   }
 
   const handleSidebar=(event)=>{
@@ -20,8 +22,15 @@ export default function Sidebar() {
     event.preventDefault();
     Navi("/");
   }
+  const handleLeave=(event)=>{
+    event.preventDefault();
+    Navi("/leave");
+  }
+
+  
   return (
     <div >
+      <div>
       <ul className='navbar'>
         <li>
       <div>
@@ -33,25 +42,36 @@ export default function Sidebar() {
     
       <div className='sidebar'>
       <header>
-        Name
+        <PeopleIcon/>
+        Ems
+        
       </header>
       <ul>
         <li id='li1'><a href="Sidebar.js" onClick={handleSidebar}>Dashboard</a></li>
-        <li id='li2'><a href="EmployeeForm.js" onClick={handleClick}>Employee Management</a></li>
-        <li id='li3'><a href="#" >System Management</a></li>
-        <li id='li4'><a href="#">Admin Management</a></li>
+        <li id='li2'><a href="EmployeeForm.js" onClick={handleClick}>Add Employee</a></li>
+        <li id='li3'><a href="#" > Task Management</a></li>
+        <li id='li4'><a href="#" onClick={handleLeave}>Attendance Management</a></li>
+        <li id='li4'><a href="#">HR</a></li>
+        <li id='li4'><a href="#">Settings</a></li>
+        <li id='li4'><a href="#" onClick={handleOut}>LogOut</a></li>
       </ul>
       </div>
 
       </div>
+
       </li>
       <li>
-        <p id='p'>HOME</p>
+        <p id='p'>Ems</p>
       </li>
-      <li id='logout'>
-        <button onClick={handleOut}>Logout</button>
+
+      <li className='nam'>
+        <NotificationsIcon fontSize="large"/>
       </li>
+
       </ul>
+
+      </div>
+       
     </div>
   )
 }

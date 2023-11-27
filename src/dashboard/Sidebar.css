@@ -6,20 +6,26 @@
 }
 
 .sidebar{
+    top: 0;
     position: fixed;
     left: -300px;
     width: 300px;
-    height: 1200px;
-    background: #042331;
+    height: 2500px;
+    background: #ffffff;
     transition: all .5s ease;
 }
 
 .sidebar header{
-    font-size: 22px;
-    color: white;
+    
+    width: 100%;
+    font-size: 40px;
+    height: 4%;
+    font-family: "Bradley Hand", cursive;
+    color: rgb(255, 255, 255);
     text-align: center;
-    line-height: 80px;
-    background: #063146;
+    line-height: 100px;
+    /* background: #063146; */
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
     user-select: none;
 }
 
@@ -27,22 +33,28 @@
     display: block;
     height: 100%;
     width: 100%;
-    line-height: 65px;
-    font-size: 17px;
-    color: white;
-    padding-left: 10px;
+   text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
     box-sizing: border-box;
-    border-top: 1px solid rgba(255, 255, 255, .1);
-    border-bottom: 1px solid black;
+    /* border-top: #4158d0;
+    border-bottom: 1px solid #c850c0; */
 }
-
+.sidebar ul a:hover{
+    border-radius: 1%;
+    background-color: #4070f4;
+   
+}
 #check{
     display: none;
 }
+
 label #btn, label #cancel{
     position: absolute;
     cursor: pointer;
-    background: #042331;
+    background: #ffffff;
     border-radius: 3px;
 }
 
@@ -53,13 +65,15 @@ label #btn{
     color: white;
     padding: 6px 12px;
     transition: all .5s;
-
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
-
+label #cancel:hover{
+    background-color: #4070f4;
+}
 label #cancel{
     z-index: 1111;
     left: -245px;
-    top: 50px;
+    top: 25px;
     font-size: 30px;
     color: #0a5275;
     padding: 4px 9px;
@@ -81,17 +95,98 @@ label #cancel{
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content:space-between;
-    background: #042331;
+    background: #fafafa;
     color: white;
     height: 70px;
-    text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 #logout button{
     color: #0a5275;
     font-size: 17px;
         animation: wiggle 2s linear infinite;
+}
+#p{
+    color: rgb(255, 255, 255);
+    font-family: "Bradley Hand", cursive;
+    font-size: 40px;
+}
+.nam{
+   
+    color: rgb(248, 246, 246);
+}
+/* footer */
+
+.foot a{
+    color: white;
+}
+.foot{
+  color:white;
+  /* position: fixed;
+ bottom: 0; */
+ height: 25%;
+  width: 100%;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  /* background-color: #ffffff; */
+  background-color: #1d213a;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+  padding-bottom: 0%;
+}
+
+/* homePage */
+
+.Side{
+    background-color: #042331;
+    
+}
+.dash-content{
+    background-color: #e3f2fd;
+    padding-top: 50px;
+}
+.dash-content .title{
+    display: flex;
+    align-items: center;
+    margin: 70px 0 30px 0;
+}
+.dash-content .title i{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: var(--title-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+
+.activity .activity-data{
+    display: flex;
+}
+.activity-data .data{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.activity-data .data-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.activity-data .data .data-list{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    white-space: nowrap;
+    color: var(--text-color);
 }

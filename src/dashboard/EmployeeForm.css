@@ -7,10 +7,13 @@
 }
 .c
 {
+    margin-top: 10%;
     height: 20vh;
     text-align: center;
 }
-
+.c h1{
+   color: #15355A;
+}
 .f
 {
     width: 500px;
@@ -24,4 +27,5 @@ table{
    
     width: 80vh;
     height: 5vh;
+   padding-bottom: 2%;
 }
