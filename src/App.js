@@ -11,12 +11,13 @@ import Pricing from './Pricing';
 import Dashboard from './dashboard/Dash';
 import Salary from './dashboard/Leave';
 import Form from './dashboard/Form';
+import { AuthProvider } from './dashboard/AuthContext';
 
 function App() {
   return (
+    <AuthProvider>
     <BrowserRouter>
        <Routes>
-        
          <Route path="/" element={<Home/>}></Route>
          <Route path="/price" element={<Pricing/>}></Route>
          <Route path="/home" element={<Home/>}></Route>
@@ -28,6 +29,7 @@ function App() {
          <Route path="/Sidebar" element={<Dashboard/>}></Route>
        </Routes>
   </BrowserRouter>
+    </AuthProvider>
     );
   };
 
